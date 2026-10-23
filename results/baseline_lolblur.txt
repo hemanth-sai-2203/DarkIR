@@ -1,0 +1,8 @@
+Model: Official pretrained DarkIR-m checkpoint
+Dataset: LOL-Blur test split
+Test pairs: 1800
+PSNR: 27.00247
+SSIM: 0.882912
+LPIPS: 0.162013
+Parameters: 3.32M
+Compute: 7.25 GMac

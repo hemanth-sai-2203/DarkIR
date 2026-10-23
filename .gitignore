@@ -38,3 +38,8 @@ train.py
 computing_test.py
 /utils/train_utils.py
 /options/train
+
+# Local experiment artifacts
+.venv/
+results/*.log
+results/*.json
