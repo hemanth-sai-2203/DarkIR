@@ -43,3 +43,6 @@ computing_test.py
 .venv/
 results/*.log
 results/*.json
+
+# Generated qualitative inference images (kept locally)
+results/qualitative_lolblur_2026-11-10/images/
