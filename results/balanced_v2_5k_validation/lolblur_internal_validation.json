@@ -1,0 +1,31 @@
+{
+  "dataset": "LOLBlur",
+  "split": "internal_validation",
+  "num_pairs": 1020,
+  "num_scenes": 17,
+  "aggregation": "macro mean of per-image metrics",
+  "ssim_protocol": "RGB Gaussian-window SSIM, 11x11 window, sigma=1.5, data_range=1",
+  "lpips_protocol": "LPIPS AlexNet, RGB inputs normalized to [-1,1]",
+  "results": {
+    "original_low_light": {
+      "psnr": 11.042592671583577,
+      "ssim": 0.32983533000098725,
+      "lpips": 0.5795278254385088
+    },
+    "v2_control": {
+      "psnr": 33.531108057788316,
+      "ssim": 0.9208292776463078,
+      "lpips": 0.0679337851064024
+    },
+    "v2_detection": {
+      "psnr": 33.41393850987128,
+      "ssim": 0.9192906771804772,
+      "lpips": 0.06976095993783982
+    }
+  },
+  "checkpoints": {
+    "v2_control": "models/balanced_v2_5k/DarkIR_v2_control_pilot_5000.pt",
+    "v2_detection": "models/balanced_v2_5k/DarkIR_v2_detection_pilot_5000.pt"
+  },
+  "elapsed_minutes": 6.314371124903361
+}

@@ -1,0 +1,230 @@
+Mode: detection | Device: NVIDIA RTX 4000 Ada Generation
+Torch: 2.5.1+cu124 | torchvision: 0.20.1+cu124
+LOL-Blur restoration data: 9180 pairs | 4590 batches/epoch
+ExDark detection supervision: 600 images | 600 batches/epoch | max_side=640
+Loaded DarkIR: 3,321,638 parameters
+Loaded frozen 12-class ExDark teacher.
+/home/aidslab/dlcv_project/DarkIR/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/aidslab/dlcv_project/DarkIR/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/aidslab/dlcv_project/DarkIR/.venv/lib/python3.12/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)
+step=1/5000 total=0.023481 L1=0.014185 LPIPS=0.038831 edge=0.012805 detection=0.095462 det_weighted=0.004773 grad_norm_preclip=0.4415 lr=1.00e-05 elapsed=6.6s
+  detection components: loss_box_reg=0.055379, loss_classifier=0.029442, loss_objectness=0.008145, loss_rpn_box_reg=0.002495
+step=50/5000 total=0.030655 L1=0.020405 LPIPS=0.084384 edge=0.010994 detection=0.025245 det_weighted=0.001262 grad_norm_preclip=1.0411 lr=1.00e-05 elapsed=115.0s
+  detection components: loss_box_reg=0.013969, loss_classifier=0.010849, loss_objectness=0.000240, loss_rpn_box_reg=0.000187
+step=100/5000 total=0.035329 L1=0.009340 LPIPS=0.027744 edge=0.009409 detection=0.454872 det_weighted=0.022744 grad_norm_preclip=0.4929 lr=9.99e-06 elapsed=169.2s
+  detection components: loss_box_reg=0.314539, loss_classifier=0.113416, loss_objectness=0.013757, loss_rpn_box_reg=0.013161
+step=150/5000 total=0.015513 L1=0.008839 LPIPS=0.028256 edge=0.006864 detection=0.070105 det_weighted=0.003505 grad_norm_preclip=0.6339 lr=9.98e-06 elapsed=204.9s
+  detection components: loss_box_reg=0.027803, loss_classifier=0.018583, loss_objectness=0.014951, loss_rpn_box_reg=0.008768
+step=200/5000 total=0.053106 L1=0.012751 LPIPS=0.104344 edge=0.010133 detection=0.588268 det_weighted=0.029413 grad_norm_preclip=0.9129 lr=9.96e-06 elapsed=258.0s
+  detection components: loss_box_reg=0.340947, loss_classifier=0.224833, loss_objectness=0.009802, loss_rpn_box_reg=0.012686
+step=250/5000 total=0.052687 L1=0.021029 LPIPS=0.095499 edge=0.020011 detection=0.422143 det_weighted=0.021107 grad_norm_preclip=1.9029 lr=9.94e-06 elapsed=296.0s
+  detection components: loss_box_reg=0.112046, loss_classifier=0.254385, loss_objectness=0.039645, loss_rpn_box_reg=0.016067
+step=300/5000 total=0.091614 L1=0.043068 LPIPS=0.125749 edge=0.025271 detection=0.694154 det_weighted=0.034708 grad_norm_preclip=5.2703 lr=9.92e-06 elapsed=336.4s
+  detection components: loss_box_reg=0.145504, loss_classifier=0.156941, loss_objectness=0.360107, loss_rpn_box_reg=0.031603
+step=350/5000 total=0.021847 L1=0.015866 LPIPS=0.027460 edge=0.009861 detection=0.054838 det_weighted=0.002742 grad_norm_preclip=2.4923 lr=9.89e-06 elapsed=370.8s
+  detection components: loss_box_reg=0.033755, loss_classifier=0.020861, loss_objectness=0.000033, loss_rpn_box_reg=0.000188
+step=400/5000 total=0.041601 L1=0.017425 LPIPS=0.094072 edge=0.016039 detection=0.279342 det_weighted=0.013967 grad_norm_preclip=0.5458 lr=9.86e-06 elapsed=410.6s
+  detection components: loss_box_reg=0.186253, loss_classifier=0.087178, loss_objectness=0.000169, loss_rpn_box_reg=0.005742
+step=450/5000 total=0.066073 L1=0.011446 LPIPS=0.041029 edge=0.009625 detection=1.000853 det_weighted=0.050043 grad_norm_preclip=1.6026 lr=9.82e-06 elapsed=445.1s
+  detection components: loss_box_reg=0.371005, loss_classifier=0.583024, loss_objectness=0.032596, loss_rpn_box_reg=0.014228
+step=500/5000 total=0.037069 L1=0.017351 LPIPS=0.151157 edge=0.012748 detection=0.079284 det_weighted=0.003964 grad_norm_preclip=0.8456 lr=9.78e-06 elapsed=486.2s
+  detection components: loss_box_reg=0.048141, loss_classifier=0.028133, loss_objectness=0.000508, loss_rpn_box_reg=0.002504
+step=550/5000 total=0.043868 L1=0.018868 LPIPS=0.092669 edge=0.013012 detection=0.301633 det_weighted=0.015082 grad_norm_preclip=7.0057 lr=9.73e-06 elapsed=522.6s
+  detection components: loss_box_reg=0.173385, loss_classifier=0.110813, loss_objectness=0.006893, loss_rpn_box_reg=0.010542
+step=600/5000 total=0.058072 L1=0.016387 LPIPS=0.029821 edge=0.012356 detection=0.761702 det_weighted=0.038085 grad_norm_preclip=0.7501 lr=9.68e-06 elapsed=558.8s
+  detection components: loss_box_reg=0.440674, loss_classifier=0.283480, loss_objectness=0.014068, loss_rpn_box_reg=0.023480
+step=650/5000 total=0.042327 L1=0.016827 LPIPS=0.044751 edge=0.015789 detection=0.404705 det_weighted=0.020235 grad_norm_preclip=0.7344 lr=9.63e-06 elapsed=571.8s
+  detection components: loss_box_reg=0.192472, loss_classifier=0.198033, loss_objectness=0.010414, loss_rpn_box_reg=0.003786
+step=700/5000 total=0.016277 L1=0.010783 LPIPS=0.022582 edge=0.010544 detection=0.054181 det_weighted=0.002709 grad_norm_preclip=0.2043 lr=9.57e-06 elapsed=584.5s
+  detection components: loss_box_reg=0.031035, loss_classifier=0.020843, loss_objectness=0.001449, loss_rpn_box_reg=0.000854
+step=750/5000 total=0.131542 L1=0.017701 LPIPS=0.061868 edge=0.012550 detection=2.140548 det_weighted=0.107027 grad_norm_preclip=2.5154 lr=9.51e-06 elapsed=598.4s
+  detection components: loss_box_reg=0.477447, loss_classifier=1.654708, loss_objectness=0.000795, loss_rpn_box_reg=0.007598
+step=800/5000 total=0.038151 L1=0.006987 LPIPS=0.027755 edge=0.005665 detection=0.562105 det_weighted=0.028105 grad_norm_preclip=1.4017 lr=9.44e-06 elapsed=611.3s
+  detection components: loss_box_reg=0.305409, loss_classifier=0.192971, loss_objectness=0.049072, loss_rpn_box_reg=0.014653
+step=850/5000 total=0.018754 L1=0.008318 LPIPS=0.058937 edge=0.007631 detection=0.083213 det_weighted=0.004161 grad_norm_preclip=0.5365 lr=9.37e-06 elapsed=624.8s
+  detection components: loss_box_reg=0.047991, loss_classifier=0.034350, loss_objectness=0.000030, loss_rpn_box_reg=0.000843
+step=900/5000 total=0.079305 L1=0.037491 LPIPS=0.078851 edge=0.015408 detection=0.663169 det_weighted=0.033158 grad_norm_preclip=3.3164 lr=9.30e-06 elapsed=637.8s
+  detection components: loss_box_reg=0.418479, loss_classifier=0.230464, loss_objectness=0.002188, loss_rpn_box_reg=0.012037
+step=950/5000 total=0.033604 L1=0.020790 LPIPS=0.098542 edge=0.017176 detection=0.042015 det_weighted=0.002101 grad_norm_preclip=0.8645 lr=9.22e-06 elapsed=650.7s
+  detection components: loss_box_reg=0.021701, loss_classifier=0.019464, loss_objectness=0.000641, loss_rpn_box_reg=0.000208
+step=1000/5000 total=0.019080 L1=0.011060 LPIPS=0.033890 edge=0.008340 detection=0.084270 det_weighted=0.004214 grad_norm_preclip=0.4722 lr=9.14e-06 elapsed=664.0s
+  detection components: loss_box_reg=0.035899, loss_classifier=0.024607, loss_objectness=0.018176, loss_rpn_box_reg=0.005589
+Saved checkpoint: models/balanced_v2_detw_005/DarkIR_v2_detection_step001000.pt
+step=1050/5000 total=0.078078 L1=0.023207 LPIPS=0.044157 edge=0.012394 detection=0.996720 det_weighted=0.049836 grad_norm_preclip=1.8376 lr=9.06e-06 elapsed=677.2s
+  detection components: loss_box_reg=0.550111, loss_classifier=0.380275, loss_objectness=0.042903, loss_rpn_box_reg=0.023431
+step=1100/5000 total=0.039262 L1=0.012683 LPIPS=0.052625 edge=0.007005 detection=0.419325 det_weighted=0.020966 grad_norm_preclip=2.7191 lr=8.97e-06 elapsed=690.4s
+  detection components: loss_box_reg=0.196913, loss_classifier=0.210146, loss_objectness=0.004284, loss_rpn_box_reg=0.007982
+step=1150/5000 total=0.054527 L1=0.017098 LPIPS=0.051733 edge=0.013980 detection=0.631136 det_weighted=0.031557 grad_norm_preclip=1.0047 lr=8.88e-06 elapsed=703.4s
+  detection components: loss_box_reg=0.318405, loss_classifier=0.299376, loss_objectness=0.005133, loss_rpn_box_reg=0.008222
+step=1200/5000 total=0.059261 L1=0.020804 LPIPS=0.096619 edge=0.021248 detection=0.554654 det_weighted=0.027733 grad_norm_preclip=0.7381 lr=8.78e-06 elapsed=716.4s
+  detection components: loss_box_reg=0.349765, loss_classifier=0.193416, loss_objectness=0.003429, loss_rpn_box_reg=0.008044
+step=1250/5000 total=0.032230 L1=0.013292 LPIPS=0.033245 edge=0.012313 detection=0.299938 det_weighted=0.014997 grad_norm_preclip=0.3706 lr=8.68e-06 elapsed=729.3s
+  detection components: loss_box_reg=0.137719, loss_classifier=0.158219, loss_objectness=0.000989, loss_rpn_box_reg=0.003011
+step=1300/5000 total=0.029831 L1=0.012702 LPIPS=0.070092 edge=0.012062 detection=0.190329 det_weighted=0.009516 grad_norm_preclip=0.7921 lr=8.58e-06 elapsed=742.5s
+  detection components: loss_box_reg=0.129249, loss_classifier=0.056763, loss_objectness=0.000429, loss_rpn_box_reg=0.003888
+step=1350/5000 total=0.050188 L1=0.019136 LPIPS=0.137949 edge=0.018299 detection=0.326838 det_weighted=0.016342 grad_norm_preclip=0.7235 lr=8.48e-06 elapsed=755.5s
+  detection components: loss_box_reg=0.045214, loss_classifier=0.267065, loss_objectness=0.012002, loss_rpn_box_reg=0.002557
+step=1400/5000 total=0.037325 L1=0.016045 LPIPS=0.092386 edge=0.016110 detection=0.224707 det_weighted=0.011235 grad_norm_preclip=0.6707 lr=8.37e-06 elapsed=767.9s
+  detection components: loss_box_reg=0.106233, loss_classifier=0.073313, loss_objectness=0.018129, loss_rpn_box_reg=0.027032
+step=1450/5000 total=0.034239 L1=0.022146 LPIPS=0.078866 edge=0.016098 detection=0.068015 det_weighted=0.003401 grad_norm_preclip=1.0486 lr=8.26e-06 elapsed=780.5s
+  detection components: loss_box_reg=0.040356, loss_classifier=0.026763, loss_objectness=0.000484, loss_rpn_box_reg=0.000413
+step=1500/5000 total=0.014750 L1=0.007138 LPIPS=0.025894 edge=0.004338 detection=0.096118 det_weighted=0.004806 grad_norm_preclip=0.9800 lr=8.15e-06 elapsed=793.8s
+  detection components: loss_box_reg=0.034760, loss_classifier=0.028298, loss_objectness=0.005865, loss_rpn_box_reg=0.027195
+step=1550/5000 total=0.041907 L1=0.018674 LPIPS=0.088407 edge=0.017508 detection=0.270342 det_weighted=0.013517 grad_norm_preclip=1.1480 lr=8.03e-06 elapsed=806.6s
+  detection components: loss_box_reg=0.179298, loss_classifier=0.086661, loss_objectness=0.000096, loss_rpn_box_reg=0.004287
+step=1600/5000 total=0.032671 L1=0.020683 LPIPS=0.089031 edge=0.020047 detection=0.041647 det_weighted=0.002082 grad_norm_preclip=0.5136 lr=7.91e-06 elapsed=819.6s
+  detection components: loss_box_reg=0.031023, loss_classifier=0.010056, loss_objectness=0.000091, loss_rpn_box_reg=0.000477
+step=1650/5000 total=0.079530 L1=0.030053 LPIPS=0.093090 edge=0.029675 detection=0.773688 det_weighted=0.038684 grad_norm_preclip=1.1054 lr=7.79e-06 elapsed=832.7s
+  detection components: loss_box_reg=0.377449, loss_classifier=0.376680, loss_objectness=0.003253, loss_rpn_box_reg=0.016307
+step=1700/5000 total=0.059874 L1=0.017062 LPIPS=0.072862 edge=0.015367 detection=0.695161 det_weighted=0.034758 grad_norm_preclip=1.9769 lr=7.67e-06 elapsed=845.7s
+  detection components: loss_box_reg=0.220659, loss_classifier=0.453361, loss_objectness=0.012360, loss_rpn_box_reg=0.008781
+step=1750/5000 total=0.036130 L1=0.009627 LPIPS=0.048389 edge=0.007941 detection=0.425355 det_weighted=0.021268 grad_norm_preclip=0.6126 lr=7.54e-06 elapsed=858.4s
+  detection components: loss_box_reg=0.173800, loss_classifier=0.180332, loss_objectness=0.065396, loss_rpn_box_reg=0.005828
+step=1800/5000 total=0.064988 L1=0.033376 LPIPS=0.098047 edge=0.027287 detection=0.408860 det_weighted=0.020443 grad_norm_preclip=1.9758 lr=7.42e-06 elapsed=871.4s
+  detection components: loss_box_reg=0.070553, loss_classifier=0.266308, loss_objectness=0.070942, loss_rpn_box_reg=0.001056
+step=1850/5000 total=0.050283 L1=0.010658 LPIPS=0.037309 edge=0.009116 detection=0.708766 det_weighted=0.035438 grad_norm_preclip=2.0656 lr=7.29e-06 elapsed=884.6s
+  detection components: loss_box_reg=0.212665, loss_classifier=0.461480, loss_objectness=0.026268, loss_rpn_box_reg=0.008353
+step=1900/5000 total=0.053199 L1=0.013285 LPIPS=0.033045 edge=0.011315 detection=0.720882 det_weighted=0.036044 grad_norm_preclip=0.9951 lr=7.16e-06 elapsed=898.2s
+  detection components: loss_box_reg=0.348333, loss_classifier=0.329830, loss_objectness=0.020600, loss_rpn_box_reg=0.022119
+step=1950/5000 total=0.035350 L1=0.020384 LPIPS=0.088220 edge=0.020522 detection=0.102355 det_weighted=0.005118 grad_norm_preclip=0.7256 lr=7.02e-06 elapsed=911.9s
+  detection components: loss_box_reg=0.057254, loss_classifier=0.039073, loss_objectness=0.000710, loss_rpn_box_reg=0.005317
+step=2000/5000 total=0.018641 L1=0.011678 LPIPS=0.036770 edge=0.008876 detection=0.056843 det_weighted=0.002842 grad_norm_preclip=0.7691 lr=6.89e-06 elapsed=925.5s
+  detection components: loss_box_reg=0.014319, loss_classifier=0.040549, loss_objectness=0.000763, loss_rpn_box_reg=0.001212
+Saved checkpoint: models/balanced_v2_detw_005/DarkIR_v2_detection_step002000.pt
+step=2050/5000 total=0.070725 L1=0.051335 LPIPS=0.133969 edge=0.018245 detection=0.101608 det_weighted=0.005080 grad_norm_preclip=15.4410 lr=6.76e-06 elapsed=938.7s
+  detection components: loss_box_reg=0.057081, loss_classifier=0.038383, loss_objectness=0.000501, loss_rpn_box_reg=0.005643
+step=2100/5000 total=0.031299 L1=0.010625 LPIPS=0.053341 edge=0.010101 detection=0.296695 det_weighted=0.014835 grad_norm_preclip=0.3916 lr=6.62e-06 elapsed=951.3s
+  detection components: loss_box_reg=0.176935, loss_classifier=0.094461, loss_objectness=0.002335, loss_rpn_box_reg=0.022964
+step=2150/5000 total=0.049591 L1=0.021899 LPIPS=0.059124 edge=0.019832 detection=0.415772 det_weighted=0.020789 grad_norm_preclip=1.4556 lr=6.48e-06 elapsed=964.0s
+  detection components: loss_box_reg=0.128455, loss_classifier=0.270870, loss_objectness=0.007680, loss_rpn_box_reg=0.008767
+step=2200/5000 total=0.031793 L1=0.017870 LPIPS=0.063232 edge=0.010140 detection=0.141870 det_weighted=0.007094 grad_norm_preclip=0.9576 lr=6.34e-06 elapsed=976.6s
+  detection components: loss_box_reg=0.052960, loss_classifier=0.072658, loss_objectness=0.001219, loss_rpn_box_reg=0.015033
+step=2250/5000 total=0.043224 L1=0.017554 LPIPS=0.052185 edge=0.016642 detection=0.392377 det_weighted=0.019619 grad_norm_preclip=0.7102 lr=6.20e-06 elapsed=989.4s
+  detection components: loss_box_reg=0.150028, loss_classifier=0.237035, loss_objectness=0.001632, loss_rpn_box_reg=0.003682
+step=2300/5000 total=0.040341 L1=0.015793 LPIPS=0.084878 edge=0.013101 detection=0.308104 det_weighted=0.015405 grad_norm_preclip=0.5437 lr=6.06e-06 elapsed=1002.6s
+  detection components: loss_box_reg=0.259287, loss_classifier=0.043046, loss_objectness=0.000181, loss_rpn_box_reg=0.005590
+step=2350/5000 total=0.080100 L1=0.012668 LPIPS=0.047515 edge=0.011127 detection=1.242477 det_weighted=0.062124 grad_norm_preclip=3.6157 lr=5.92e-06 elapsed=1016.3s
+  detection components: loss_box_reg=0.437549, loss_classifier=0.674008, loss_objectness=0.106463, loss_rpn_box_reg=0.024456
+step=2400/5000 total=0.052257 L1=0.022146 LPIPS=0.122229 edge=0.019785 detection=0.337966 det_weighted=0.016898 grad_norm_preclip=1.2737 lr=5.78e-06 elapsed=1028.8s
+  detection components: loss_box_reg=0.199077, loss_classifier=0.130797, loss_objectness=0.000618, loss_rpn_box_reg=0.007474
+step=2450/5000 total=0.029330 L1=0.010449 LPIPS=0.082734 edge=0.009717 detection=0.202432 det_weighted=0.010122 grad_norm_preclip=0.9606 lr=5.64e-06 elapsed=1041.6s
+  detection components: loss_box_reg=0.119778, loss_classifier=0.075223, loss_objectness=0.001036, loss_rpn_box_reg=0.006394
+step=2500/5000 total=0.037339 L1=0.026143 LPIPS=0.063353 edge=0.018835 detection=0.078372 det_weighted=0.003919 grad_norm_preclip=1.4187 lr=5.50e-06 elapsed=1054.5s
+  detection components: loss_box_reg=0.051193, loss_classifier=0.026345, loss_objectness=0.000025, loss_rpn_box_reg=0.000809
+step=2550/5000 total=0.091583 L1=0.010716 LPIPS=0.016294 edge=0.008070 detection=1.576689 det_weighted=0.078834 grad_norm_preclip=4.6370 lr=5.36e-06 elapsed=1067.5s
+  detection components: loss_box_reg=0.591299, loss_classifier=0.731085, loss_objectness=0.201114, loss_rpn_box_reg=0.053191
+step=2600/5000 total=0.053262 L1=0.025420 LPIPS=0.093792 edge=0.024531 detection=0.344726 det_weighted=0.017236 grad_norm_preclip=0.2813 lr=5.22e-06 elapsed=1080.4s
+  detection components: loss_box_reg=0.246014, loss_classifier=0.088933, loss_objectness=0.000594, loss_rpn_box_reg=0.009184
+step=2650/5000 total=0.024269 L1=0.018007 LPIPS=0.023659 edge=0.005236 detection=0.072674 det_weighted=0.003634 grad_norm_preclip=0.7572 lr=5.08e-06 elapsed=1093.1s
+  detection components: loss_box_reg=0.044666, loss_classifier=0.026228, loss_objectness=0.000651, loss_rpn_box_reg=0.001129
+step=2700/5000 total=0.024031 L1=0.013168 LPIPS=0.046766 edge=0.009976 detection=0.113752 det_weighted=0.005688 grad_norm_preclip=0.7429 lr=4.94e-06 elapsed=1105.8s
+  detection components: loss_box_reg=0.092714, loss_classifier=0.019160, loss_objectness=0.001631, loss_rpn_box_reg=0.000246
+step=2750/5000 total=0.083897 L1=0.012834 LPIPS=0.045718 edge=0.010712 detection=1.319101 det_weighted=0.065955 grad_norm_preclip=1.6785 lr=4.80e-06 elapsed=1118.4s
+  detection components: loss_box_reg=0.556268, loss_classifier=0.615377, loss_objectness=0.114521, loss_rpn_box_reg=0.032935
+step=2800/5000 total=0.020380 L1=0.010305 LPIPS=0.047047 edge=0.009237 detection=0.098180 det_weighted=0.004909 grad_norm_preclip=0.8460 lr=4.66e-06 elapsed=1131.4s
+  detection components: loss_box_reg=0.051504, loss_classifier=0.043326, loss_objectness=0.000359, loss_rpn_box_reg=0.002991
+step=2850/5000 total=0.049379 L1=0.011646 LPIPS=0.022486 edge=0.009846 detection=0.699842 det_weighted=0.034992 grad_norm_preclip=2.6617 lr=4.52e-06 elapsed=1144.2s
+  detection components: loss_box_reg=0.225325, loss_classifier=0.442025, loss_objectness=0.021317, loss_rpn_box_reg=0.011175
+step=2900/5000 total=0.053438 L1=0.036112 LPIPS=0.123574 edge=0.037307 detection=0.062064 det_weighted=0.003103 grad_norm_preclip=0.7064 lr=4.38e-06 elapsed=1157.4s
+  detection components: loss_box_reg=0.021867, loss_classifier=0.010276, loss_objectness=0.003239, loss_rpn_box_reg=0.026682
+step=2950/5000 total=0.029089 L1=0.021388 LPIPS=0.056562 edge=0.022418 detection=0.018477 det_weighted=0.000924 grad_norm_preclip=0.2955 lr=4.24e-06 elapsed=1170.3s
+  detection components: loss_box_reg=0.014329, loss_classifier=0.002827, loss_objectness=0.001231, loss_rpn_box_reg=0.000089
+step=3000/5000 total=0.031885 L1=0.012538 LPIPS=0.044218 edge=0.008965 detection=0.289536 det_weighted=0.014477 grad_norm_preclip=1.2586 lr=4.11e-06 elapsed=1183.1s
+  detection components: loss_box_reg=0.175453, loss_classifier=0.105316, loss_objectness=0.001016, loss_rpn_box_reg=0.007752
+Saved checkpoint: models/balanced_v2_detw_005/DarkIR_v2_detection_step003000.pt
+step=3050/5000 total=0.055652 L1=0.027684 LPIPS=0.062323 edge=0.025358 detection=0.409352 det_weighted=0.020468 grad_norm_preclip=1.2820 lr=3.98e-06 elapsed=1195.8s
+  detection components: loss_box_reg=0.152913, loss_classifier=0.216892, loss_objectness=0.028802, loss_rpn_box_reg=0.010745
+step=3100/5000 total=0.049244 L1=0.010491 LPIPS=0.083898 edge=0.007317 detection=0.599953 det_weighted=0.029998 grad_norm_preclip=1.5037 lr=3.84e-06 elapsed=1209.1s
+  detection components: loss_box_reg=0.381795, loss_classifier=0.200050, loss_objectness=0.002670, loss_rpn_box_reg=0.015438
+step=3150/5000 total=0.041540 L1=0.016556 LPIPS=0.054665 edge=0.015828 detection=0.374519 det_weighted=0.018726 grad_norm_preclip=0.3864 lr=3.71e-06 elapsed=1222.0s
+  detection components: loss_box_reg=0.170906, loss_classifier=0.191122, loss_objectness=0.011852, loss_rpn_box_reg=0.000640
+step=3200/5000 total=0.027859 L1=0.010550 LPIPS=0.036504 edge=0.008997 detection=0.264176 det_weighted=0.013209 grad_norm_preclip=0.7104 lr=3.58e-06 elapsed=1234.8s
+  detection components: loss_box_reg=0.132477, loss_classifier=0.125740, loss_objectness=0.001989, loss_rpn_box_reg=0.003971
+step=3250/5000 total=0.025626 L1=0.016231 LPIPS=0.064852 edge=0.009036 detection=0.049174 det_weighted=0.002459 grad_norm_preclip=2.7400 lr=3.46e-06 elapsed=1247.6s
+  detection components: loss_box_reg=0.039827, loss_classifier=0.008841, loss_objectness=0.000004, loss_rpn_box_reg=0.000502
+step=3300/5000 total=0.021612 L1=0.013247 LPIPS=0.046373 edge=0.012194 detection=0.062367 det_weighted=0.003118 grad_norm_preclip=0.3645 lr=3.33e-06 elapsed=1260.6s
+  detection components: loss_box_reg=0.041737, loss_classifier=0.018618, loss_objectness=0.000282, loss_rpn_box_reg=0.001730
+step=3350/5000 total=0.091321 L1=0.022205 LPIPS=0.078761 edge=0.023039 detection=1.201758 det_weighted=0.060088 grad_norm_preclip=0.6220 lr=3.21e-06 elapsed=1273.0s
+  detection components: loss_box_reg=0.493381, loss_classifier=0.385369, loss_objectness=0.268645, loss_rpn_box_reg=0.054363
+step=3400/5000 total=0.026086 L1=0.019103 LPIPS=0.037352 edge=0.018229 detection=0.046738 det_weighted=0.002337 grad_norm_preclip=0.9406 lr=3.09e-06 elapsed=1285.7s
+  detection components: loss_box_reg=0.018272, loss_classifier=0.022481, loss_objectness=0.000076, loss_rpn_box_reg=0.005909
+step=3450/5000 total=0.034293 L1=0.020842 LPIPS=0.079157 edge=0.021473 detection=0.089232 det_weighted=0.004462 grad_norm_preclip=0.3825 lr=2.97e-06 elapsed=1298.8s
+  detection components: loss_box_reg=0.054729, loss_classifier=0.027083, loss_objectness=0.005143, loss_rpn_box_reg=0.002277
+step=3500/5000 total=0.065247 L1=0.013093 LPIPS=0.059319 edge=0.011807 detection=0.912630 det_weighted=0.045632 grad_norm_preclip=1.5333 lr=2.85e-06 elapsed=1311.6s
+  detection components: loss_box_reg=0.413140, loss_classifier=0.315953, loss_objectness=0.167415, loss_rpn_box_reg=0.016123
+step=3550/5000 total=0.022267 L1=0.015829 LPIPS=0.034540 edge=0.014493 detection=0.045180 det_weighted=0.002259 grad_norm_preclip=0.5070 lr=2.74e-06 elapsed=1324.4s
+  detection components: loss_box_reg=0.029358, loss_classifier=0.010320, loss_objectness=0.001479, loss_rpn_box_reg=0.004023
+step=3600/5000 total=0.058635 L1=0.029876 LPIPS=0.123110 edge=0.029091 detection=0.299855 det_weighted=0.014993 grad_norm_preclip=0.7831 lr=2.63e-06 elapsed=1337.4s
+  detection components: loss_box_reg=0.086337, loss_classifier=0.200993, loss_objectness=0.010526, loss_rpn_box_reg=0.001999
+step=3650/5000 total=0.048382 L1=0.022870 LPIPS=0.083754 edge=0.020650 detection=0.322086 det_weighted=0.016104 grad_norm_preclip=0.4829 lr=2.52e-06 elapsed=1350.3s
+  detection components: loss_box_reg=0.185848, loss_classifier=0.112162, loss_objectness=0.000756, loss_rpn_box_reg=0.023319
+step=3700/5000 total=0.075181 L1=0.039408 LPIPS=0.076347 edge=0.040995 detection=0.521764 det_weighted=0.026088 grad_norm_preclip=0.4692 lr=2.42e-06 elapsed=1363.2s
+  detection components: loss_box_reg=0.325132, loss_classifier=0.168113, loss_objectness=0.013398, loss_rpn_box_reg=0.015121
+step=3750/5000 total=0.080730 L1=0.058405 LPIPS=0.142092 edge=0.018365 detection=0.143947 det_weighted=0.007197 grad_norm_preclip=28.5765 lr=2.32e-06 elapsed=1376.2s
+  detection components: loss_box_reg=0.098305, loss_classifier=0.038697, loss_objectness=0.000097, loss_rpn_box_reg=0.006849
+step=3800/5000 total=0.028549 L1=0.022210 LPIPS=0.034727 edge=0.010446 detection=0.046891 det_weighted=0.002345 grad_norm_preclip=0.9807 lr=2.22e-06 elapsed=1389.4s
+  detection components: loss_box_reg=0.032725, loss_classifier=0.012799, loss_objectness=0.000323, loss_rpn_box_reg=0.001044
+step=3850/5000 total=0.038662 L1=0.019041 LPIPS=0.096896 edge=0.017635 detection=0.180995 det_weighted=0.009050 grad_norm_preclip=0.7290 lr=2.12e-06 elapsed=1402.5s
+  detection components: loss_box_reg=0.120890, loss_classifier=0.055436, loss_objectness=0.000714, loss_rpn_box_reg=0.003955
+step=3900/5000 total=0.033571 L1=0.024243 LPIPS=0.068196 edge=0.025754 detection=0.024396 det_weighted=0.001220 grad_norm_preclip=0.3014 lr=2.03e-06 elapsed=1415.0s
+  detection components: loss_box_reg=0.015657, loss_classifier=0.008415, loss_objectness=0.000014, loss_rpn_box_reg=0.000310
+step=3950/5000 total=0.038146 L1=0.019749 LPIPS=0.043632 edge=0.010867 detection=0.269813 det_weighted=0.013491 grad_norm_preclip=2.1450 lr=1.94e-06 elapsed=1427.7s
+  detection components: loss_box_reg=0.174394, loss_classifier=0.089476, loss_objectness=0.001441, loss_rpn_box_reg=0.004502
+step=4000/5000 total=0.035103 L1=0.020539 LPIPS=0.088666 edge=0.015483 detection=0.098471 det_weighted=0.004924 grad_norm_preclip=0.8615 lr=1.86e-06 elapsed=1440.5s
+  detection components: loss_box_reg=0.053697, loss_classifier=0.043922, loss_objectness=0.000039, loss_rpn_box_reg=0.000812
+Saved checkpoint: models/balanced_v2_detw_005/DarkIR_v2_detection_step004000.pt
+step=4050/5000 total=0.085181 L1=0.047372 LPIPS=0.230877 edge=0.021874 detection=0.272549 det_weighted=0.013627 grad_norm_preclip=0.6994 lr=1.78e-06 elapsed=1453.7s
+  detection components: loss_box_reg=0.175680, loss_classifier=0.088940, loss_objectness=0.002103, loss_rpn_box_reg=0.005826
+step=4100/5000 total=0.041671 L1=0.024140 LPIPS=0.106170 edge=0.024576 detection=0.113694 det_weighted=0.005685 grad_norm_preclip=0.6506 lr=1.70e-06 elapsed=1466.8s
+  detection components: loss_box_reg=0.070860, loss_classifier=0.039466, loss_objectness=0.000976, loss_rpn_box_reg=0.002393
+step=4150/5000 total=0.051472 L1=0.017807 LPIPS=0.062593 edge=0.017882 detection=0.530233 det_weighted=0.026512 grad_norm_preclip=0.5046 lr=1.63e-06 elapsed=1479.3s
+  detection components: loss_box_reg=0.341369, loss_classifier=0.164953, loss_objectness=0.011337, loss_rpn_box_reg=0.012574
+step=4200/5000 total=0.023229 L1=0.013973 LPIPS=0.035231 edge=0.013282 detection=0.101370 det_weighted=0.005068 grad_norm_preclip=0.3217 lr=1.56e-06 elapsed=1491.7s
+  detection components: loss_box_reg=0.031802, loss_classifier=0.045166, loss_objectness=0.021921, loss_rpn_box_reg=0.002480
+step=4250/5000 total=0.028690 L1=0.015344 LPIPS=0.032149 edge=0.006777 detection=0.195829 det_weighted=0.009791 grad_norm_preclip=0.7172 lr=1.49e-06 elapsed=1504.7s
+  detection components: loss_box_reg=0.130766, loss_classifier=0.044315, loss_objectness=0.001884, loss_rpn_box_reg=0.018865
+step=4300/5000 total=0.026235 L1=0.016415 LPIPS=0.053025 edge=0.016486 detection=0.073864 det_weighted=0.003693 grad_norm_preclip=0.2804 lr=1.43e-06 elapsed=1517.4s
+  detection components: loss_box_reg=0.020718, loss_classifier=0.038738, loss_objectness=0.008123, loss_rpn_box_reg=0.006286
+step=4350/5000 total=0.063459 L1=0.010580 LPIPS=0.025821 edge=0.007950 detection=0.997972 det_weighted=0.049899 grad_norm_preclip=1.5786 lr=1.37e-06 elapsed=1530.3s
+  detection components: loss_box_reg=0.497712, loss_classifier=0.463221, loss_objectness=0.020411, loss_rpn_box_reg=0.016629
+step=4400/5000 total=0.051525 L1=0.015488 LPIPS=0.044962 edge=0.014451 detection=0.616357 det_weighted=0.030818 grad_norm_preclip=0.6339 lr=1.32e-06 elapsed=1542.9s
+  detection components: loss_box_reg=0.346181, loss_classifier=0.235106, loss_objectness=0.027048, loss_rpn_box_reg=0.008022
+step=4450/5000 total=0.045442 L1=0.025340 LPIPS=0.058271 edge=0.013882 detection=0.271605 det_weighted=0.013580 grad_norm_preclip=3.0979 lr=1.27e-06 elapsed=1555.4s
+  detection components: loss_box_reg=0.128917, loss_classifier=0.136767, loss_objectness=0.002052, loss_rpn_box_reg=0.003869
+step=4500/5000 total=0.037640 L1=0.020237 LPIPS=0.092142 edge=0.020095 detection=0.143681 det_weighted=0.007184 grad_norm_preclip=0.4932 lr=1.22e-06 elapsed=1567.7s
+  detection components: loss_box_reg=0.080259, loss_classifier=0.061821, loss_objectness=0.000116, loss_rpn_box_reg=0.001485
+step=4550/5000 total=0.023131 L1=0.015400 LPIPS=0.052050 edge=0.012282 detection=0.038235 det_weighted=0.001912 grad_norm_preclip=0.9969 lr=1.18e-06 elapsed=1581.0s
+  detection components: loss_box_reg=0.023003, loss_classifier=0.015157, loss_objectness=0.000006, loss_rpn_box_reg=0.000068
+step=4600/5000 total=0.074547 L1=0.042718 LPIPS=0.086885 edge=0.011740 detection=0.451060 det_weighted=0.022553 grad_norm_preclip=11.8991 lr=1.14e-06 elapsed=1594.3s
+  detection components: loss_box_reg=0.298229, loss_classifier=0.143805, loss_objectness=0.000502, loss_rpn_box_reg=0.008524
+step=4650/5000 total=0.016395 L1=0.006065 LPIPS=0.054117 edge=0.003588 detection=0.094773 det_weighted=0.004739 grad_norm_preclip=0.8782 lr=1.11e-06 elapsed=1607.2s
+  detection components: loss_box_reg=0.051627, loss_classifier=0.040154, loss_objectness=0.000426, loss_rpn_box_reg=0.002566
+step=4700/5000 total=0.066931 L1=0.032953 LPIPS=0.166040 edge=0.035076 detection=0.312414 det_weighted=0.015621 grad_norm_preclip=0.9068 lr=1.08e-06 elapsed=1620.4s
+  detection components: loss_box_reg=0.110216, loss_classifier=0.178615, loss_objectness=0.008926, loss_rpn_box_reg=0.014656
+step=4750/5000 total=0.030781 L1=0.021071 LPIPS=0.064383 edge=0.020071 detection=0.045375 det_weighted=0.002269 grad_norm_preclip=0.3225 lr=1.06e-06 elapsed=1633.3s
+  detection components: loss_box_reg=0.011705, loss_classifier=0.024896, loss_objectness=0.007594, loss_rpn_box_reg=0.001180
+step=4800/5000 total=0.021247 L1=0.009847 LPIPS=0.043461 edge=0.009417 detection=0.131666 det_weighted=0.006583 grad_norm_preclip=0.4910 lr=1.04e-06 elapsed=1645.9s
+  detection components: loss_box_reg=0.027848, loss_classifier=0.089227, loss_objectness=0.013189, loss_rpn_box_reg=0.001401
+step=4850/5000 total=0.074198 L1=0.058253 LPIPS=0.063635 edge=0.005663 detection=0.185964 det_weighted=0.009298 grad_norm_preclip=3.6172 lr=1.02e-06 elapsed=1658.4s
+  detection components: loss_box_reg=0.135002, loss_classifier=0.045561, loss_objectness=0.000338, loss_rpn_box_reg=0.005062
+step=4900/5000 total=0.055859 L1=0.025274 LPIPS=0.092877 edge=0.013461 detection=0.412489 det_weighted=0.020624 grad_norm_preclip=1.3793 lr=1.01e-06 elapsed=1671.1s
+  detection components: loss_box_reg=0.287685, loss_classifier=0.107912, loss_objectness=0.008748, loss_rpn_box_reg=0.008143
+step=4950/5000 total=0.082640 L1=0.025989 LPIPS=0.119506 edge=0.023591 detection=0.870401 det_weighted=0.043520 grad_norm_preclip=0.9067 lr=1.00e-06 elapsed=1683.8s
+  detection components: loss_box_reg=0.434367, loss_classifier=0.389986, loss_objectness=0.027965, loss_rpn_box_reg=0.018083
+step=5000/5000 total=0.027677 L1=0.017906 LPIPS=0.074448 edge=0.017372 detection=0.029147 det_weighted=0.001457 grad_norm_preclip=0.1714 lr=1.00e-06 elapsed=1697.2s
+  detection components: loss_box_reg=0.015147, loss_classifier=0.011750, loss_objectness=0.000081, loss_rpn_box_reg=0.002169
+Saved checkpoint: models/balanced_v2_detw_005/DarkIR_v2_detection_pilot_5000.pt
+TRAINING PILOT COMPLETED
+Mean losses: {
+  "total": 0.04663654188078843,
+  "l1": 0.018695497555937617,
+  "lpips": 0.0697819013396278,
+  "edge": 0.014903004361316561,
+  "detection": 0.40435407579746097
+}
+Average seconds/step: 0.339
+Teacher parameter gradients: 0 (verified throughout training)
+Pilot checkpoint: models/balanced_v2_detw_005/DarkIR_v2_detection_pilot_5000.pt
