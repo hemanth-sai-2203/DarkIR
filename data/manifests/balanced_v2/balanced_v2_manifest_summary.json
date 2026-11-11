@@ -1,0 +1,139 @@
+{
+  "seed": 2026,
+  "lolblur": {
+    "train_pairs": 9180,
+    "validation_pairs": 1020,
+    "train_scenes": 153,
+    "validation_scenes": 17,
+    "scene_overlap": 0
+  },
+  "exdark": {
+    "official_train_images": 3000,
+    "eligible_annotated_train_images": 2999,
+    "excluded_unannotated_train_images": 1,
+    "excluded_unannotated_train_records": [
+      {
+        "image": "images/ExDark/Motorbike/2015_05894.jpg",
+        "primary_class": "Motorbike",
+        "annotation": "Groundtruth/ExDark_Annno/Motorbike/2015_05894.jpg.txt",
+        "reason": "annotation file contains no parseable bounding boxes"
+      }
+    ],
+    "teacher_train_images": 2099,
+    "teacher_train_boxes": 7275,
+    "teacher_val_images": 300,
+    "teacher_val_boxes": 913,
+    "detection_supervision_images": 600,
+    "detection_supervision_boxes": 2193,
+    "official_validation_images": 1800,
+    "official_validation_boxes": 6212,
+    "teacher_train_primary_counts": {
+      "Bicycle": 175,
+      "Boat": 175,
+      "Bottle": 175,
+      "Bus": 175,
+      "Car": 175,
+      "Cat": 175,
+      "Chair": 175,
+      "Cup": 175,
+      "Dog": 175,
+      "Motorbike": 174,
+      "People": 175,
+      "Table": 175
+    },
+    "teacher_val_primary_counts": {
+      "Bicycle": 25,
+      "Boat": 25,
+      "Bottle": 25,
+      "Bus": 25,
+      "Car": 25,
+      "Cat": 25,
+      "Chair": 25,
+      "Cup": 25,
+      "Dog": 25,
+      "Motorbike": 25,
+      "People": 25,
+      "Table": 25
+    },
+    "detection_supervision_primary_counts": {
+      "Bicycle": 50,
+      "Boat": 50,
+      "Bottle": 50,
+      "Bus": 50,
+      "Car": 50,
+      "Cat": 50,
+      "Chair": 50,
+      "Cup": 50,
+      "Dog": 50,
+      "Motorbike": 50,
+      "People": 50,
+      "Table": 50
+    },
+    "all_labels_contiguous_1_to_12": true,
+    "box_class_counts_teacher_train": {
+      "bicycle": 327,
+      "bus": 232,
+      "chair": 773,
+      "people": 2289,
+      "car": 878,
+      "motorbike": 342,
+      "dog": 240,
+      "table": 508,
+      "bottle": 466,
+      "boat": 390,
+      "cup": 613,
+      "cat": 217
+    },
+    "box_class_counts_teacher_val": {
+      "bicycle": 44,
+      "car": 109,
+      "chair": 115,
+      "people": 282,
+      "bottle": 55,
+      "dog": 32,
+      "motorbike": 40,
+      "table": 70,
+      "boat": 37,
+      "cup": 65,
+      "bus": 35,
+      "cat": 29
+    },
+    "box_class_counts_detection_supervision": {
+      "bicycle": 92,
+      "people": 700,
+      "car": 251,
+      "motorbike": 108,
+      "table": 176,
+      "chair": 250,
+      "dog": 63,
+      "bus": 66,
+      "boat": 103,
+      "bottle": 133,
+      "cup": 186,
+      "cat": 65
+    },
+    "box_class_counts_official_validation": {
+      "bicycle": 239,
+      "car": 770,
+      "people": 1954,
+      "bus": 209,
+      "chair": 630,
+      "table": 418,
+      "boat": 344,
+      "motorbike": 340,
+      "dog": 193,
+      "cat": 173,
+      "bottle": 506,
+      "cup": 436
+    }
+  },
+  "files": [
+    "lolblur_train.json",
+    "lolblur_internal_val.json",
+    "exdark_teacher_train.json",
+    "exdark_teacher_val.json",
+    "exdark_detection_supervision.json",
+    "exdark_official_val.json",
+    "exdark_excluded_unannotated_train.json"
+  ]
+}

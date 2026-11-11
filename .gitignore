@@ -46,3 +46,7 @@ results/*.json
 
 # Generated qualitative inference images (kept locally)
 results/qualitative_lolblur_2026-11-10/images/
+
+# Large reproducible evaluation prediction caches
+results/*predictions*.json
+results/**/*predictions*.json

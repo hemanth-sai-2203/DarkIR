@@ -1,0 +1,15 @@
+{
+  "dataset": "ExDark",
+  "format_version": 1,
+  "split": "excluded_unannotated_train",
+  "seed": 2026,
+  "num_images": 1,
+  "records": [
+    {
+      "image": "images/ExDark/Motorbike/2015_05894.jpg",
+      "primary_class": "Motorbike",
+      "annotation": "Groundtruth/ExDark_Annno/Motorbike/2015_05894.jpg.txt",
+      "reason": "annotation file contains no parseable bounding boxes"
+    }
+  ]
+}
